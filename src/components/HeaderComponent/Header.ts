@@ -2,10 +2,11 @@ export class Header {
   private readonly element: Element;
   private readonly title: string;
 
-  constructor(parentElement: Element, title: string) {
+  constructor(parentElement: Element, title: string, className: string) {
     this.element = document.createElement("header");
     parentElement.appendChild(this.element);
     this.title = title;
+    this.element.className = className;
     this.render();
   }
 
