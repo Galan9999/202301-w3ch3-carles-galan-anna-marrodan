@@ -1,10 +1,6 @@
 import { Component } from "../Component";
 
 export class PageComponent extends Component {
-  constructor(parentElement: Element, className: string, tagName: string) {
-    super(parentElement, "container", "div");
-  }
-
   render() {
     super.render();
 
