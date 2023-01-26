@@ -1,6 +1,10 @@
-import { PageComponent } from "./components/Components/PageComponent/PageComponent";
+import { HeaderComponent } from "./components/Components/HeaderComponent/HeaderComponent";
+import { MainComponent } from "./MainComponent/MainComponent";
 
-const container = document.body;
+const { body } = document;
 
-const header = new PageComponent(container, "container", "div");
+const header = new HeaderComponent(body, "container", "div");
 header.render();
+
+const mainContent = new MainComponent(header.element, "main-content", "main");
+mainContent.render();
