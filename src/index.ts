@@ -19,11 +19,8 @@ const sectionPendingSeries = new SectionComponent(
 );
 sectionPendingSeries.render();
 
-const cardList = new Component(sectionPendingSeries.element, "series", "ul");
-cardList.render();
-
-const cardListItem = new CardComponent(cardList.element, "serie", "li");
-cardListItem.render();
+const cards = new CardComponent(sectionPendingSeries.element, "series", "ul");
+cards.render();
 
 const sectionWatchedSeries = new SectionComponent(
   header.element,
