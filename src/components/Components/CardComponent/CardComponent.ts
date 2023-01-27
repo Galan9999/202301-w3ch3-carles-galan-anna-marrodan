@@ -7,7 +7,7 @@ export class CardComponent extends Component {
     this.element.innerHTML = `${series
       .map(
         (serie) =>
-          `<img
+          `<li class="serie"><img
           class="serie__poster"
           src="${serie.poster}"
           alt="${serie.name} poster"
@@ -32,6 +32,6 @@ export class CardComponent extends Component {
               </li>
             </ul>`
       )
-      .join("")}`;
+      .join("")}</li>`;
   }
 }
